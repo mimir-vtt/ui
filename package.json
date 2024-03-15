@@ -1,7 +1,7 @@
 {
   "name": "@mimir-vtt/ui",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.0-development",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "repository": {
@@ -19,12 +20,14 @@
   "bugs": {
     "url": "https://github.com/mimir-vtt/ui/issues"
   },
-  "private": false,
   "publishConfig": {
     "access": "public"
   },
   "release": {
-    "branches": ["main", "next"]
+    "branches": [
+      "main",
+      "next"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -49,7 +52,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.8.0",
-    "semantic-release": "^23.0.2",
+    "semantic-release": "^23.0.3",
     "storybook": "^8.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
