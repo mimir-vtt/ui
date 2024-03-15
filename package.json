@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@mimir-vtt/ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,21 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mimir-vtt/ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mimir-vtt/ui/issues"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "release": {
+    "branches": ["main", "next"]
   },
   "dependencies": {
     "react": "^18.2.0",
