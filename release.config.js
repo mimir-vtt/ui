@@ -3,7 +3,11 @@ module.exports = {
 		branches: ["main", "next"]
 	},
 	plugins: [
-		"semantic-release-license",
+		["semantic-release-license", {
+			license: {
+				path: './LICENSE'
+			}
+		}]
 		["semantic-release-replace-plugin", {
 			replacements: [
 				files: ["src/configuration.ts"],
