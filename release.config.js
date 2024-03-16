@@ -3,9 +3,11 @@ module.exports = {
 		branches: ["main", "next"]
 	},
 	plugins: [
+		"@semantic-release/commit-analyzer",
+		"@semantic-release/release-notes-generator",
 		["semantic-release-license", {
 			license: {
-				path: './LICENSE'
+				path: 'LICENSE'
 			}
 		}]
 		["semantic-release-replace-plugin", {
@@ -22,10 +24,8 @@ module.exports = {
 				countMatches: true
 			]
 		}],
-		"@semantic-release/commit-analyzer",
-		"@semantic-release/release-notes-generator",
 		["@semantic-release/changelog", {
-			changelogFile: "./CHANGELOG.md"
+			changelogFile: "CHANGELOG.md"
 		}],
 		"@semantic-release/npm",
 		["semantic-release-npm-deprecate-old-versions", {
@@ -36,9 +36,9 @@ module.exports = {
 		}],
 		["@semantic-release/git", { 
 			assets: [
-				"./LICENSE", 
+				"LICENSE", 
 				"src/configuration.ts",
-				"./CHANGELOG.md"
+				"CHANGELOG.md"
 			] 
 		}]
 	]
