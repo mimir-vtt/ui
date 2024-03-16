@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![Static Badge](https://img.shields.io/badge/react-18.2.0-blue?logo=react&logoColor=white) ![Static Badge](https://img.shields.io/badge/typescript-5.2.0-%233178C6?logo=typescript&logoColor=white) ![Static Badge](https://img.shields.io/badge/vite-5.2.0-%23646CFF?logo=vite&logoColor=white)
+ [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release&logoColor=white)](https://github.com/semantic-release/semantic-release) ![Static Badge](https://img.shields.io/badge/storybook-8.0.0-%23FF4785?logo=storybook&logoColor=white)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Mimir-VTT/ui
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+UI Library for the MimirVTT project
 
-## Expanding the ESLint configuration
+This project is, as of now, in a very early stage, and as such not much is there for the moment. Come back later to check out what's new !
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+Just get the latest version from npm :
+
+```bash
+  npm install @mimir-vtt/ui
+```
+
+    
+## Usage
+
+To use any of the component from this project, just  import them in your code :
+
+```javascript
+import Button from '@mimir-vtt/ui'
+
+function App() {
+  return <Button />
 }
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You can visualize any components from `@mimir-vtt/ui`, as well as access their documentation, by running the storybook configured in the project :
+
+```bash
+npm run storybook
+```
+
+
+## Contributing
+
+Contributions are always welcome !
+
+See `CONTRIBUTING.md` for ways to get started.
+
+
+## Authors
+
+- [@JulienMasgonty ](https://github.com/JulienMasgonty)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
