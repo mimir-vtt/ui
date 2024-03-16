@@ -20,7 +20,7 @@ Just get the latest version from npm :
     
 ## Usage
 
-To use any of the component from this project, just  import them in your code :
+To use any of the components from this project, just  import them in your code :
 
 ```javascript
 import Button from '@mimir-vtt/ui'
