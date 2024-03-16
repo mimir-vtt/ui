@@ -26,13 +26,6 @@ module.exports = {
 		"@semantic-release/release-notes-generator",
 		["@semantic-release/changelog", {
 			changelogFile: "./CHANGELOG.md"
-		}
-		["@semantic-release/git", { 
-			assets: [
-				"./LICENSE", 
-				"src/configuration.ts",
-				"./CHANGELOG.md"
-			] 
 		}],
 		"@semantic-release/npm",
 		["semantic-release-npm-deprecate-old-versions", {
@@ -40,6 +33,13 @@ module.exports = {
 				"supportLatest",
 				"supportPreReleaseIfNotReleased",
 				"deprecateAll"
+		}],
+		["@semantic-release/git", { 
+			assets: [
+				"./LICENSE", 
+				"src/configuration.ts",
+				"./CHANGELOG.md"
+			] 
 		}]
 	]
 }
